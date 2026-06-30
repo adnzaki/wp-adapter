@@ -53,7 +53,7 @@
                 </div>
                 <div>
                     <span class="text-lg font-bold text-slate-900 tracking-tight">WpAdapter</span>
-                    <span class="ml-2 px-2.5 py-0.5 text-[11px] font-semibold bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100">v1.0.0</span>
+                    <span class="ml-2 px-2.5 py-0.5 text-[11px] font-semibold bg-indigo-50 text-indigo-700 rounded-full border border-indigo-100">v1.0.3</span>
                 </div>
             </div>
             <div class="flex items-center space-x-4">
