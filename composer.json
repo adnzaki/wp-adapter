@@ -1,0 +1,20 @@
+{
+  "name": "adnzaki/wp-adapter",
+  "description": "A simple WordPress REST API adapter class.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Adnan Zaki",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.1 || ^8.2 || ^8.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "WpAdapter\\": "src/"
+    }
+  }
+}
