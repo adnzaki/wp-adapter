@@ -194,7 +194,7 @@
                 </section>
 
                 <section id="architecture-pagination" class="scroll-mt-28 border-t border-slate-100 pt-10 space-y-4">
-                    <h2 class="text-2xl font-bold text-slate-900">Advanced Architecture 1: Custom Pagination & Taxonomy Filtering</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Custom Pagination & Taxonomy Filtering</h2>
                     <p class="text-slate-600 leading-relaxed">
                         When building production architectures, you need to seamlessly sync your application's presentation pagination with the WordPress collection count metrics. Leverage <code>getTotalPost()</code> to extract the WordPress metadata headers (<code>X-WP-Total</code>) for overhead-free calculations, combined with <code>startFrom()</code> to pull clean, sliced datasets.
                     </p>
@@ -217,7 +217,7 @@ $postsResult = $wp->setPerPage(10)
                 </section>
 
                 <section id="architecture-hybrid" class="scroll-mt-28 border-t border-slate-100 pt-10 space-y-4">
-                    <h2 class="text-2xl font-bold text-slate-900">Advanced Architecture 2: Hybrid Data Synchronization (Popular Posts Model)</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Hybrid Data Synchronization (Popular Posts Model)</h2>
                     <p class="text-slate-600 leading-relaxed">
                         Frequently, you might want to track highly write-intensive interactive values (like page view counters or clicks) inside a fast, local transactional database, while keeping structural content management centralized inside WordPress.
                     </p>
@@ -237,7 +237,7 @@ $popularPostsList = $wp->setPerPage(5)
                 </section>
 
                 <section id="architecture-interaction" class="scroll-mt-28 border-t border-slate-100 pt-10 space-y-4">
-                    <h2 class="text-2xl font-bold text-slate-900">Advanced Architecture 3: Dynamic SEO Metadata Mapping & Threaded Comments</h2>
+                    <h2 class="text-2xl font-bold text-slate-900">Dynamic SEO Metadata Mapping & Threaded Comments</h2>
                     <p class="text-slate-600 leading-relaxed">
                         While loading targeted document views, you can directly map normalized object attributes to populate HTML OpenGraph headers for search engine optimization (SEO). Concurrently, retrieve ready-to-render multi-threaded/nested comment trees to any architectural depth limit via a single function execution call.
                     </p>
