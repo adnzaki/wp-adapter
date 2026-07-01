@@ -408,16 +408,54 @@
                 </div>
 
                 <!-- Native Instance Callout -->
-                <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900/60 border border-cyan-500/40 rounded-2xl p-5 flex items-start gap-4 shadow-xl backdrop-blur-sm">
-                    <div class="bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 p-2.5 rounded-xl mt-0.5">
-                        <i class="fa-solid fa-unlock-keyhole text-base"></i>
-                    </div>
-                    <div class="space-y-1">
-                        <h4 class="text-sm font-bold text-cyan-300 font-code">$wp</h4>
+                <div class="bg-gradient-to-r from-cyan-950/40 to-slate-900/60 border border-cyan-500/40 rounded-2xl p-5 shadow-xl backdrop-blur-sm">
+
+                    <!-- Mobile: icon + title sebaris, konten di bawah -->
+                    <div class="flex flex-col gap-3 sm:hidden">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 p-2.5 rounded-xl shrink-0">
+                                <i class="fa-solid fa-unlock-keyhole text-base"></i>
+                            </div>
+                            <p class="text-[10px] font-code font-bold uppercase tracking-widest text-cyan-500/70">
+                                Escape the Abstraction
+                            </p>
+                        </div>
                         <p class="text-xs text-slate-300 leading-relaxed">
-                            WpAdapter does not lock you in. Every fluent setter simply mutates internal request state and returns the same instance, so you stay in full control of how requests to your Headless WordPress backend are composed and dispatched.
+                            WpAdapter does not lock you in. The <code class="text-cyan-300 bg-slate-950 px-1.5 py-0.5 rounded font-code text-xs">call()</code> method allows you to directly invoke any WordPress REST API endpoint, returning the raw JSON response as a PHP array. This is useful for custom endpoints or when you need to bypass the normalized object schema.
                         </p>
+                        <div class="bg-slate-900/80 border border-slate-700/70 rounded-2xl overflow-hidden shadow-xl">
+                            <div class="bg-slate-800/90 px-5 py-3 border-b border-slate-700/60 flex justify-between items-center">
+                                <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>Method Signature</span>
+                            </div>
+                            <div class="p-5 font-code text-xs bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none whitespace-nowrap">
+                                <span class="text-cyan-300">wp()-></span><span class="text-amber-400">call</span>(<span class="text-blue-400">string</span> <span class="text-slate-200">$path</span>, <span class="text-blue-400">bool</span> <span class="text-slate-200">$withTotal</span> = <span class="text-orange-400">false</span>, <span class="text-blue-400">string</span> <span class="text-slate-200">$method</span> = <span class="text-emerald-400">'GET'</span>, <span class="text-blue-400">array</span> <span class="text-slate-200">$data</span> = <span class="text-orange-400">[]</span>)
+                            </div>
+                        </div>
                     </div>
+
+                    <!-- Desktop: icon di kiri, semua konten di kanan -->
+                    <div class="hidden sm:flex items-start gap-4">
+                        <div class="bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 p-2.5 rounded-xl mt-0.5 shrink-0">
+                            <i class="fa-solid fa-unlock-keyhole text-base"></i>
+                        </div>
+                        <div class="space-y-1 flex-1">
+                            <p class="text-[10px] font-code font-bold uppercase tracking-widest text-cyan-500/70 mb-2">
+                                Escape the Abstraction
+                            </p>
+                            <p class="text-xs text-slate-300 leading-relaxed" style="margin-bottom: 10px;">
+                                WpAdapter does not lock you in. The <code class="text-cyan-300 bg-slate-950 px-1.5 py-0.5 rounded font-code text-xs">call()</code> method allows you to directly invoke any WordPress REST API endpoint, returning the raw JSON response as a PHP array. This is useful for custom endpoints or when you need to bypass the normalized object schema.
+                            </p>
+                            <div class="bg-slate-900/80 border border-slate-700/70 rounded-2xl overflow-hidden shadow-xl">
+                                <div class="bg-slate-800/90 px-5 py-3 border-b border-slate-700/60 flex justify-between items-center">
+                                    <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>Method Signature</span>
+                                </div>
+                                <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none whitespace-nowrap">
+                                    <span class="text-cyan-300">wp()-></span><span class="text-amber-400">call</span>(<span class="text-blue-400">string</span> <span class="text-slate-200">$path</span>, <span class="text-blue-400">bool</span> <span class="text-slate-200">$withTotal</span> = <span class="text-orange-400">false</span>, <span class="text-blue-400">string</span> <span class="text-slate-200">$method</span> = <span class="text-emerald-400">'GET'</span>, <span class="text-blue-400">array</span> <span class="text-slate-200">$data</span> = <span class="text-orange-400">[]</span>)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
