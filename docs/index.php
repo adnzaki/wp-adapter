@@ -139,7 +139,7 @@
                                 <i class="fa-solid fa-terminal text-lg"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-white">Seamlessly Connected</h3>
+                                <h3 class="text-xl font-bold text-white">Instantly Bridged</h3>
                                 <p class="text-xs text-slate-400">Zero dependencies, drop-in ready</p>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                             <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>Example chained configuration</span>
                             <span class="text-[10px] font-code bg-cyan-950 text-cyan-400 border border-cyan-900/50 px-2 py-0.5 rounded">WpAdapter.php</span>
                         </div>
-                        <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed">
+                        <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed whitespace-nowrap">
                             <p><span class="text-blue-400">$wp</span>-&gt;<span class="text-amber-400">setPerPage</span>(<span class="text-orange-400">5</span>)</p>
                             <p class="pl-4">-&gt;<span class="text-amber-400">setSinglePostUrl</span>(<span class="text-emerald-400">'read'</span>)</p>
                             <p class="pl-4">-&gt;<span class="text-amber-400">setOrder</span>(<span class="text-emerald-400">'title'</span>, <span class="text-emerald-400">'asc'</span>);</p>
@@ -286,7 +286,7 @@
                             <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>Post object properties</span>
                             <span class="text-[10px] font-code bg-cyan-950 text-cyan-400 border border-cyan-900/50 px-2 py-0.5 rounded">Post.php</span>
                         </div>
-                        <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1.5 leading-relaxed">
+                        <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1.5 leading-relaxed whitespace-nowrap">
                             <p><span class="text-blue-400">$post</span>-&gt;<span class="text-cyan-300">id</span> <span class="text-slate-500">// Unique Post ID (Integer)</span></p>
                             <p><span class="text-blue-400">$post</span>-&gt;<span class="text-cyan-300">title</span> <span class="text-slate-500">// Clean rendered title string (String)</span></p>
                             <p><span class="text-blue-400">$post</span>-&gt;<span class="text-cyan-300">excerpt</span> <span class="text-slate-500">// Plain-text trimmed summary abstract without HTML elements (String)</span></p>
@@ -315,7 +315,7 @@
                                 <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>1. Pagination & Taxonomy Sync</span>
                                 <span class="text-[10px] font-code bg-cyan-950 text-cyan-400 border border-cyan-900/50 px-2 py-0.5 rounded">WpAdapter.php</span>
                             </div>
-                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed">
+                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed whitespace-nowrap">
                                 <p><span class="text-slate-500">// Scenario: Calculating matching documents filtered under dynamic taxonomies or search terms</span></p>
                                 <p><span class="text-blue-400">$taxonomyFilters</span> = [];</p>
                                 <p><span class="text-purple-400">if</span> (<span class="text-blue-400">$taxonomyType</span> === <span class="text-emerald-400">'category'</span>) {</p>
@@ -351,7 +351,7 @@
                                 <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-cyan-400 mr-2"></i>2. Popular Posts Hydration</span>
                                 <span class="text-[10px] font-code bg-cyan-950 text-cyan-400 border border-cyan-900/50 px-2 py-0.5 rounded">WpAdapter.php</span>
                             </div>
-                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed">
+                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed whitespace-nowrap">
                                 <p><span class="text-slate-500">// Scenario: Enriched hydration linking localized metric sorting with remote WordPress schemas</span></p>
                                 <p><span class="text-slate-500">// Retrieve top 5 unique tracking IDs from your application data engine</span></p>
                                 <p><span class="text-blue-400">$localPopularIds</span> = [<span class="text-orange-400">241</span>, <span class="text-orange-400">102</span>, <span class="text-orange-400">88</span>, <span class="text-orange-400">514</span>, <span class="text-orange-400">19</span>];</p>
@@ -378,7 +378,7 @@
                                 <span class="text-xs font-code text-slate-200 font-medium"><i class="fa-solid fa-circle-chevron-right text-blue-400 mr-2"></i>3. SEO Mapping & Comment Threads</span>
                                 <span class="text-[10px] font-code bg-blue-950 text-blue-400 border border-blue-900 px-2 py-0.5 rounded">WpAdapter.php</span>
                             </div>
-                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed">
+                            <div class="p-5 font-code text-xs sm:text-sm bg-slate-950 text-slate-300 overflow-x-auto scrollbar-none space-y-1 leading-relaxed whitespace-nowrap">
                                 <p><span class="text-slate-500">// 1. Retrieve a single structured document using path slug queries</span></p>
                                 <p><span class="text-blue-400">$postDetails</span> = <span class="text-blue-400">$wp</span>-&gt;<span class="text-amber-400">setSinglePostUrl</span>(<span class="text-emerald-400">'read'</span>)-&gt;<span class="text-amber-400">readPost</span>(<span class="text-blue-400">$articleSlug</span>);</p>
                                 <br>
