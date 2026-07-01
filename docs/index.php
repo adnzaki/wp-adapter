@@ -139,7 +139,7 @@
                                 <i class="fa-solid fa-terminal text-lg"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-white">Instantly Bridged</h3>
+                                <h3 class="text-xl font-bold text-white">Seamlessly Connected</h3>
                                 <p class="text-xs text-slate-400">Zero dependencies, drop-in ready</p>
                             </div>
                         </div>
